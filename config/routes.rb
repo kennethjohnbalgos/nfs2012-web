@@ -1,5 +1,11 @@
 Nfs2012Web::Application.routes.draw do
   get "home/index"
+  get "about/index"
+  get "competitions/index"
+  get "gallery/index"
+  get "partners/index"
+  get "news/index"
+  get "contactus/index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
