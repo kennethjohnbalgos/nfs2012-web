@@ -1,0 +1,67 @@
+.head
+  .logo_space
+    = image_tag('home_logo.jpg')
+  .right  
+    .navigation
+      = link_to "HOME", controller: 'home'
+      = link_to "ABOUT", controller: 'about'
+      = link_to "COMPETITIONS", controller: 'competitions'
+      = link_to "GALLERY", controller: 'gallery'
+      = link_to "PARTNERS", controller: 'partners'
+      = link_to "NEWS", controller: 'news'
+      = link_to "CONTACT US", controller: 'contactus'
+    .title
+      = "Regional Food Showdowns"
+    .locations 
+      .location
+        = "LUZON"
+      .location
+        = "VISAYAS"
+      .location
+        = "MINDANAO"
+    .banner
+      = "Let the real SHOWDOWN begin!"
+    .subbanner
+      .subleft
+        = "September 21-22, 2012"
+      .subright
+        = "World Trade Center, Metro Manila"
+.content
+  .left_space
+    .image_banner
+      = image_tag('head_home_chefwars.jpg')
+    .submenu
+      = link_to "Judges", controller: 'home'
+      = link_to "Participants", controller: 'home'
+      = link_to "Schedule", controller: 'home'
+      = link_to "Results", controller: 'home'
+    .piclinks
+      .piclink
+        = image_tag('piclink_about.png')
+      .piclink
+        = image_tag('piclink_competitions.png')
+  .right_space
+    .announcement_title
+      = image_tag('main_announcement_title.jpg')
+    .announcement_list
+      .announcement
+        = link_to "Announcement", controller: 'home'
+      .announcement
+        = link_to "Announcement", controller: 'home'
+      .announcement
+        = link_to "Announcement", controller: 'home'
+      .announcement
+        = link_to "Announcement", controller: 'home'
+.foot
+  .foot_left
+    %iframe{:src => "http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fthenationalfoodshowdown&amp;layout=standard&amp;show_faces=true&amp;width=430&amp;action=like&amp;font=verdana&amp;colorscheme=light&amp;height=80", :scrolling => "no", :frameborder => "0", :style => "border:none; overflow:hidden; width:430px; height:80px;", :allowTransparency => "true"}
+  .foot_right
+    = "Please contact the Secretariat in Manila for inquiries: Leah or Marie"
+    %br/
+    = "Telephone: (02) 411-1467 / 411-1434 / 415-2272, local 2334 or 2331"
+    %br/
+    = "Telefax: (02) 411-1564;"
+    = "Email:"
+    = link_to "www.thenationalfoodshowdown.com", "mailto:foodshowdown@abs-cbn.com"
+.copyright
+  = "Copyright © 2012 TV Food Chefs. All rights reserved."
