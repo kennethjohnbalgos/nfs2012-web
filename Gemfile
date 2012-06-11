@@ -7,7 +7,8 @@ gem 'rails', '3.2.3'
 
 gem 'mysql2'
 gem 'haml-rails'
-
+gem 'execjs'
+gem 'therubyracer', :platforms => :ruby
 
 # Gems used only for assets and not required
 # in production environments by default.
