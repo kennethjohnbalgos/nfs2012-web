@@ -1,0 +1,8 @@
+.head_navigation
+  = link_to "HOME", {controller: 'home'}, class: "#{'active' if params[:controller] == 'home'}"
+  = link_to "ABOUT", {controller: 'about'}, class: "#{'active' if params[:controller] == 'about'}"
+  = link_to "COMPETITIONS", {controller: 'competitions'}
+  = link_to "GALLERY", {controller: 'gallery'}
+  = link_to "PARTNERS", {controller: 'partners'}
+  = link_to "ARCHIVES", {controller: 'news'}
+  = link_to "CONTACT US", {controller: 'contactus'}

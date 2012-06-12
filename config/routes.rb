@@ -1,6 +1,10 @@
 Nfs2012Web::Application.routes.draw do
-  get "home/index"
-  get "about/index"
+
+  get "shared/navigation"
+
+  match "home" => "home#index"
+  match "about" => "about#index"
+  
   get "competitions/index"
   get "gallery/index"
   get "partners/index"
