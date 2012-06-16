@@ -9,6 +9,8 @@ gem 'mysql2'
 gem 'haml-rails'
 gem 'execjs'
 gem 'therubyracer', :platforms => :ruby
+gem "ckeditor", "3.7.1"
+gem "paperclip"
 
 # Gems used only for assets and not required
 # in production environments by default.

@@ -1,0 +1,19 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @content_about.title
+%p
+  %b Content:
+  %div.content
+    =raw @content_about.content
+%p
+  %b Position:
+  = @content_about.position
+%p
+  %b Clickable:
+  = @content_about.clickable
+
+= link_to 'Edit', edit_content_about_path(@content_about)
+\|
+= link_to 'Back', content_abouts_path

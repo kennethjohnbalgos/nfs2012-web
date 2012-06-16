@@ -1,9 +1,13 @@
 Nfs2012Web::Application.routes.draw do
 
+  mount Ckeditor::Engine => '/ckeditor'
+
+  resources :content_abouts
+
   get "shared/navigation"
 
   match "home" => "home#index"
-  match "about" => "about#index"
+  match "about(/:action/:id)" => "about#index"
   
   get "competitions/index"
   get "gallery/index"

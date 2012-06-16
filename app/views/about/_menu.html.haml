@@ -1,0 +1,7 @@
+- @content_abouts.each do |c|
+  - if c.clickable?
+    .announcement
+      = link_to c.title, {controller: 'about', action: 'content', id: c.id}, remote: true
+  - else
+    .announcement_notlink
+      = c.title

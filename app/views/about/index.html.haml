@@ -4,22 +4,14 @@
       = render partial: 'shared/navigation'
     .wide_banner
 .content
-  .left_space
-    = "CONTENT"
   .right_space
     .announcement_title
       = params[:controller].upcase
     .announcement_list
-      .announcement
-        = link_to "TV Food Chef", controller: 'home'
-      .announcement
-        = link_to "Regional Food Showdown", controller: 'home'
-      .announcement
-        = link_to "Chef Wars: NCR", controller: 'home'
-      .announcement
-        = link_to "Chef Wars: Luzon", controller: 'home'
-      .announcement
-        = link_to "Chef Wars: Visayas", controller: 'home'
-      .announcement
-        = link_to "Chef Wars: Mindanao", controller: 'home'
+      = render partial: 'menu'
+  .left_space
+    .title
+      = @content_about.title
+    .context
+      =raw @content_about.content
 = render partial: 'shared/footer'

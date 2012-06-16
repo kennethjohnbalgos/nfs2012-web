@@ -1,0 +1,21 @@
+%h1 Content Listing: About
+
+%table.content
+  %tr
+    %th Title
+    %th Position
+    %th Clickable
+    %th.controls
+  - @content_abouts.each do |content_about|
+    %tr
+      %td.left= content_about.title
+      %td.center= content_about.position
+      %td.center= content_about.clickable
+      %td.controls
+        = link_to 'Show', content_about
+        = link_to 'Edit', edit_content_about_path(content_about)
+        = link_to 'Delete', content_about, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'Add New Content', new_content_about_path
