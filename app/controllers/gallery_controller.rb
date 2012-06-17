@@ -4,6 +4,46 @@ class GalleryController < ApplicationController
 
   def showdown_2009
   end
+
+  def showdown_2009_1
+    renderJS
+  end
+
+  def showdown_2009_2
+    renderJS
+  end
+
+  def showdown_2009_3
+    renderJS
+  end
+
+  def showdown_2009_4
+    renderJS
+  end
+
+  def showdown_2009_5
+    renderJS
+  end
+
+  def showdown_2009_6
+    renderJS
+  end
+
+  def showdown_2009_7
+    renderJS
+  end
+
+  def showdown_2009_8
+    renderJS
+  end
+
+  def showdown_2009_9
+    renderJS
+  end
+  
+
+  def showdown_2010
+  end
   
   def showdown_2010_1
     renderJS
