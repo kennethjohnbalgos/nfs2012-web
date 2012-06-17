@@ -1,0 +1,12 @@
+.album
+  = link_to image_tag('showdown_logo.jpg'), controller: 'gallery'
+  .title
+    = link_to "Food Showdown Logos", controller: 'gallery'
+.album
+  = link_to image_tag('showdown_2010.jpg'), controller: 'gallery', action: 'showdown_2010'
+  .title
+    = link_to "Food Showdown 2010", controller: 'gallery', action: 'showdown_2010'
+.album
+  = link_to image_tag('showdown_2009.jpg'), controller: 'gallery', action: 'showdown_2009'
+  .title
+    = link_to "Food Showdown 2009", {controller: 'gallery', action: 'showdown_2009'}

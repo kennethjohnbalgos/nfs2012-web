@@ -1,0 +1,18 @@
+.head
+  .top_banner
+    .text_space 
+      = render partial: 'shared/navigation'
+    .wide_banner
+.content
+  .right_space
+    .announcement_title
+      = "Announcements"
+    .announcement_list
+      = render partial: 'home/menu'
+  .left_space
+    .title
+      = "Contact Us"
+    .context_noimg
+      %center
+        = image_tag('contact_us.jpg', width: 300)
+= render partial: 'shared/footer'

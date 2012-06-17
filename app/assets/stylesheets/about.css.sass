@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body#about_area, body#competitions_area, body#announcements_area, body#partners_area, body#archives_area
+body#about_area, body#competitions_area, body#announcements_area, body#partners_area, body#gallery_area, body#contact_us_area, body#archives_area
 	.head
 		background: #fff
 		width: 100%
@@ -36,24 +36,77 @@ body#about_area, body#competitions_area, body#announcements_area, body#partners_
 			background: #ffffff
 			width: 740px
 			min-height: 450px
+			.center
+				text-align: center
 			.title
 				color: #f78444
 				font-size: 36px
 				padding: 20px
 				font-weight: bold
+			.context_noimg
+				font-size: 14px
+				padding: 0 30px 10px
 			.context
 				font-size: 14px
 				padding: 0 30px 10px
+				img
+					border: 10px solid #fff
+					margin: 0px 10px
+					-webkit-box-shadow: 0 0 6px black
+					-moz-box-shadow: 0 0 6px black
+					box-shadow: 0 0 6px black
+			.image_large
+				display: inline-block
+				padding: 10px 5px 15px
+				.caption
+					padding-top: 5px
+					font-size: 16px
+			.image_group
+				height: 110px
+				.image
+					float: left
+					border: 3px solid #fff
+					width: 155px
+					height: 90px
+					overflow: hidden
+					margin: 0px 4px 10px
+					-webkit-box-shadow: 0 0 4px black
+					-moz-box-shadow: 0 0 4px black
+					box-shadow: 0 0 4px black
+					&:hover
+						opacity: 0.9
+					img
+						border: none
+						width: 155px
+						margin: 0
 		.right_space
+			float: right
 			background: #fefb98
 			margin: 0
-			float: right
 			width: 283px
 			min-height: 450px
 			border-left: 2px solid #d48541
 			border-bottom: 2px solid #d48541
 			padding: 0
-			height: 444px
+			.album
+				margin: 5px 15px 20px 0
+				text-align: center
+				cursor: pointer
+				img
+					border: 7px solid #fff
+					-webkit-box-shadow: 0 0 6px black
+					-moz-box-shadow: 0 0 6px black
+					box-shadow: 0 0 6px black
+					opacity: 0.9
+					&:hover
+						opacity: 1
+				.title a
+					font-size: 18px
+					color: #f78444
+					font-weight: bold
+					opacity: 0.9
+					&:hover
+						opacity: 1
 			.announcement_title
 				float: left
 				-webkit-transform: rotate(270deg)
@@ -82,3 +135,4 @@ body#about_area, body#competitions_area, body#announcements_area, body#partners_
 					margin: 30px 0 0px
 					font-size: 16px
 					color: #000
+	

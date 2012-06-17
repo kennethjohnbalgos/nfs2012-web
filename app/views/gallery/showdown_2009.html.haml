@@ -1,0 +1,17 @@
+.head
+  .top_banner
+    .text_space 
+      = render partial: 'shared/navigation'
+    .wide_banner
+.content
+  .right_space
+    .announcement_title
+      = "ALBUMS"
+    .announcement_list
+      = render partial: 'albums'
+  .left_space
+    .title
+      = "National Food Showdown 2009"
+    .context
+      = render partial: 'showdown_2009'
+= render partial: 'shared/footer'
