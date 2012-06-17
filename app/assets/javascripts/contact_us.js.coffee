@@ -4,7 +4,4 @@
 
 $ ->
 	$('.menu_contact_us').live 'click', ->
-		if($('#dimmer').is(':visible'))
-		  $('#dimmer').fadeOut()
-		else
-		  $('#dimmer').fadeIn()
+	  $('#dimmer').fadeOut()
