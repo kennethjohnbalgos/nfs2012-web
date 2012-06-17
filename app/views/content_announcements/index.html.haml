@@ -1,0 +1,24 @@
+%h1 Content List: Announcements
+
+%table.content
+  %tr
+    %th Title
+    %th Date Posted
+    %th Clickable
+    %th.controls
+
+  - @content_announcements.each do |content_announcement|
+    %tr
+      %td.left= content_announcement.title
+      %td.center= content_announcement.created_at
+      %td.center= content_announcement.clickable
+      %td
+        = link_to 'Show', content_announcement
+        = link_to 'Edit', edit_content_announcement_path(content_announcement)
+        = link_to 'Destroy', content_announcement, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'Back to Dashboard', dashboard_showdown_path
+|
+= link_to 'Add New Content', new_content_announcement_path

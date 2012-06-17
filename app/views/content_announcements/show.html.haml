@@ -1,0 +1,19 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @content_announcement.title
+%p
+  %b Content:
+  %div.content
+    =raw @content_announcement.content
+%p
+  %b Date Posted:
+  = @content_announcement.created_at
+%p
+  %b Clickable:
+  = @content_announcement.clickable
+
+= link_to 'Edit', edit_content_announcement_path(@content_announcement)
+\|
+= link_to 'Back', content_announcements_path

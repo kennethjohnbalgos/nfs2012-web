@@ -1,0 +1,24 @@
+%h1 Content Listing: Competitions
+
+%table.content
+  %tr
+    %th Title
+    %th Position
+    %th Clickable
+    %th.controls
+
+  - @content_competitions.each do |content_competition|
+    %tr
+      %td.left= content_competition.title
+      %td.center= content_competition.position
+      %td.center= content_competition.clickable
+      %td.controls
+        = link_to 'Show', content_competition
+        = link_to 'Edit', edit_content_competition_path(content_competition)
+        = link_to 'Destroy', content_competition, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'Back to Dashboard', dashboard_showdown_path
+|
+= link_to 'Add New Content', new_content_competition_path

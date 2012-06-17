@@ -1,0 +1,2 @@
+module ContentArchivesHelper
+end

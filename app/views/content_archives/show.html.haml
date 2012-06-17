@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @content_archive.title
+%p
+  %b Content:
+  = @content_archive.content
+%p
+  %b Position:
+  = @content_archive.position
+%p
+  %b Clickable:
+  = @content_archive.clickable
+
+= link_to 'Edit', edit_content_archive_path(@content_archive)
+\|
+= link_to 'Back', content_archives_path

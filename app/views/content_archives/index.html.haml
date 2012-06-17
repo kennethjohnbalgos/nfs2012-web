@@ -1,0 +1,24 @@
+%h1 Content List: Archives
+
+%table.content
+  %tr
+    %th Title
+    %th Date Posted
+    %th Clickable
+    %th.controls
+
+  - @content_archives.each do |content_archive|
+    %tr
+      %td.left= content_archive.title
+      %td.center= content_archive.created_at
+      %td.center= content_archive.clickable
+      %td
+        = link_to 'Show', content_archive
+        = link_to 'Edit', edit_content_archive_path(content_archive)
+        = link_to 'Destroy', content_archive, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'Back to Dashboard', dashboard_showdown_path
+|
+= link_to 'Add New Content', new_content_archive_path

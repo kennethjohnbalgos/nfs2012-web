@@ -1,105 +1,19 @@
 .head
   .top_banner
     .text_space
-      .text_banner
-        = "Let the real SHOWDOWN begin!"
-      .sub_text_banner
-        .subleft
-          = "September 21-22, 2012"
-        .subright
-          = "World Trade Center, Metro Manila"    
+      = render partial: 'shared/thick_header'   
       = render partial: 'shared/navigation'
     .wide_banner
 .content
   .left_space
-    .title
-      = "Regional Food Showdowns"
-    .locations 
-      .location_wide
-        = image_tag('rfs_luzon_s.jpg')
-        .location_title
-          = "HRT Week"
-        .location_name
-          = "Hotel and Restaurant Association of Baguio (HRAB)"
-        .location_date
-          = ""
-      .location_wide
-        = image_tag('rfs_visayas_s.jpg')
-        .location_title
-          = "Cebu Goes Culinary"
-        .location_name
-          = "Where flavors meet fun"
-        .location_date
-          = ""
-      .location_wide
-        = image_tag('rfs_mindanao_s.jpg')
-        .location_title
-          = "KUMBIRA"
-        .location_name
-          = "Cagayan de Oro Hotel and Restaurant Association (COHARA)"
-        .location_date
-          = ""
-    .title
-      = "Regional Chef Wars"
-    .locations 
-      .location
-        = image_tag('icon_logo.jpg')
-        .location_title
-          = "NCR/CALABARZON"
-        .location_description
-          = "Metro Showdown"
-        .location_date
-          = "June 28 & Aug 11"
-        .location_place
-          = "City of Manila"
-      .location
-        = image_tag('icon_logo.jpg')
-        .location_title
-          = "LUZON"
-        .location_description
-          = "HRT Weekend"
-        .location_date
-          = "Sept 6 to Sept 8"
-        .location_place
-          = "Baguio City"
-      .location
-        = image_tag('icon_logo.jpg')
-        .location_title
-          = "VISAYAS"
-        .location_description
-          = "12th Cebu Goes Culinary"
-        .location_date
-          = "Aug 3 to Aug 4"
-        .location_place
-          = "Cebu City"
-      .location
-        = image_tag('icon_logo.jpg')
-        .location_title
-          = "MINDANAO"      
-        .location_description
-          = "17th KUMBIRA"
-        .location_date
-          = "Aug 15 to Aug 18"
-        .location_place
-          = "Cagayan de Oro City"
+    = render partial: 'regional_showdown'
+    = render partial: 'regional_chefwars'
   .right_space
     .announcement_title
       = image_tag('main_announcement_title.jpg')
     .announcement_list
-      .announcement
-        = link_to "Announcement", controller: 'home'
-      .announcement
-        = link_to "Announcement", controller: 'home'
-      .announcement
-        = link_to "Announcement", controller: 'home'
-      .announcement
-        = link_to "Announcement", controller: 'home'
+      = render partial: 'menu'
 .home_gallery
   .piclinks
-    .piclink
-      = image_tag('piclink_about.png')
-    .piclink
-      = image_tag('piclink_competitions.png')
-    .piclink
-      = image_tag('piclink_about.png')
+    = render partial: 'picture_links'
 = render partial: 'shared/footer'

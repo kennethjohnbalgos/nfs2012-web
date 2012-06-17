@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body#about_area
+body#about_area, body#competitions_area, body#announcements_area, body#partners_area, body#archives_area
 	.head
 		background: #fff
 		width: 100%
@@ -19,6 +19,19 @@ body#about_area
 	.content
 		background: #f9f9f9
 		min-height: 450px
+		.wide_space
+			background: #ffffff
+			width: 100%
+			min-height: 450px
+			.title
+				color: #f78444
+				font-size: 36px
+				padding: 20px
+				font-weight: bold
+			.context
+				font-size: 14px
+				text-align: center
+				padding: 0 30px 10px
 		.left_space
 			background: #ffffff
 			width: 740px
@@ -26,9 +39,11 @@ body#about_area
 			.title
 				color: #f78444
 				font-size: 36px
-				padding: 10px
+				padding: 20px
+				font-weight: bold
 			.context
-				padding: 0 25px 10px
+				font-size: 14px
+				padding: 0 30px 10px
 		.right_space
 			background: #fefb98
 			margin: 0
@@ -63,6 +78,7 @@ body#about_area
 						&:hover
 							color: #fe9931
 				.announcement_notlink
+					font-weight: bold
 					margin: 30px 0 0px
 					font-size: 16px
 					color: #000

@@ -1,0 +1,17 @@
+.head
+  .top_banner
+    .text_space 
+      = render partial: 'shared/navigation'
+    .wide_banner
+.content
+  .right_space
+    .announcement_title
+      = params[:controller].upcase
+    .announcement_list
+      = render partial: 'menu'
+  .left_space
+    .title
+      = @content_archive.title if @content_archive.present?
+    .context
+      =raw @content_archive.content if @content_archive.present?
+= render partial: 'shared/footer'

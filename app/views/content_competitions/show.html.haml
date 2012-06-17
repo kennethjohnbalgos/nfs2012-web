@@ -1,0 +1,19 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @content_competition.title
+%p
+  %b Content:
+  %div.content
+    =raw @content_competition.content
+%p
+  %b Position:
+  = @content_competition.position
+%p
+  %b Clickable:
+  = @content_competition.clickable
+
+= link_to 'Edit', edit_content_competition_path(@content_competition)
+\|
+= link_to 'Back', content_competitions_path
