@@ -4,9 +4,14 @@
       = render partial: 'shared/navigation'
     .wide_banner
 .content
-  .wide_space
+  .right_space
+    .announcement_title
+      = image_tag('menu_title_partners.jpg')
+    .announcement_list
+      = render partial: 'menu'
+  .left_space
     .title
       = "Partners"
     .context
-      = image_tag('partners_banner.jpg')
+      = image_tag('partners_banner.jpg', width: '645', class: 'no_border')
 = render partial: 'shared/footer'

@@ -1,0 +1,16 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @content_partner.title
+%p
+  %b Content:
+  %div.content
+    =raw @content_partner.content
+%p
+  %b Clickable:
+  = @content_partner.clickable
+
+= link_to 'Edit', edit_content_partner_path(@content_partner)
+\|
+= link_to 'Back', content_partners_path

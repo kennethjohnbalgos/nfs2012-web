@@ -1,0 +1,4 @@
+$(".content .left_space").hide()
+$(".content .left_space .title").html("<%=raw escape_javascript(@content_partner.title) %>")
+$(".content .left_space .context").html("<%=raw escape_javascript(@content_partner.content) %>")
+$(".content .left_space").fadeIn()

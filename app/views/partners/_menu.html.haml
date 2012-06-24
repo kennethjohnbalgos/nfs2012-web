@@ -1,0 +1,7 @@
+- @content_partners.each do |c|
+  - if c.clickable?
+    .announcement
+      = link_to c.title, {controller: 'partners', action: 'content', id: c.id}, remote: true
+  - else
+    .announcement_disabled
+      = c.title

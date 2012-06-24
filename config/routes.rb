@@ -1,5 +1,6 @@
 Nfs2012Web::Application.routes.draw do
 
+
   mount Ckeditor::Engine => '/ckeditor'
   match "foodshowdown2012abscbn" => "dashboard#showdown"
 
@@ -14,6 +15,7 @@ Nfs2012Web::Application.routes.draw do
   resources :content_announcements
   resources :content_abouts
   resources :content_competitions
+  resources :content_partners
   
   match "home" => "home#index"
   match "about(/:action/:id)" => "about#index"
