@@ -1,19 +1,19 @@
 .head
-  .top_banner
-    .text_space
-      = render partial: 'shared/thick_header'   
+  .top_banner  
+    .head_navigation
       = render partial: 'shared/navigation'
     .wide_banner
-.content
-  .left_space
-    = render partial: 'regional_showdown'
-    = render partial: 'regional_chefwars'
-  .right_space
-    .announcement_title
-      = image_tag('menu_title_announcements.jpg')
-    .announcement_list
-      = render partial: 'menu'
-.home_gallery
-  .piclinks
-    = render partial: 'picture_links'
+      = render partial: 'shared/thick_header' 
+=# .content
+=#   .left_space
+=#     = render partial: 'regional_showdown'
+=#     = render partial: 'regional_chefwars'
+=#   .right_space
+=#     .announcement_title
+=#       = image_tag('menu_title_announcements.jpg')
+=#     .announcement_list
+=#       = render partial: 'menu'
+=# .home_gallery
+=#   .piclinks
+=#     = render partial: 'picture_links'
 = render partial: 'shared/footer'

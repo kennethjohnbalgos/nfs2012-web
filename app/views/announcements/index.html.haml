@@ -1,12 +1,8 @@
-.head
-  .top_banner
-    .text_space 
-      = render partial: 'shared/navigation'
-    .wide_banner
+= render partial: 'shared/content_header'
 .content
   .right_space
     .announcement_title
-      = params[:controller].upcase
+      = image_tag('main_title_news_and_updates.jpg')
     .announcement_list
       = render partial: 'menu'
   .left_space
