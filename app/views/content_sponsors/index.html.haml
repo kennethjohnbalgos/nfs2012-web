@@ -1,0 +1,22 @@
+%h1 Content Listing: Sponsors
+
+%table.content
+  %tr
+    %th Title
+    %th Clickable
+    %th.controls
+
+  - @content_sponsors.each do |content_sponsor|
+    %tr
+      %td.left= content_sponsor.title
+      %td.center= content_sponsor.clickable
+      %td.controls
+        = link_to 'Show', content_sponsor
+        = link_to 'Edit', edit_content_sponsor_path(content_sponsor)
+        = link_to 'Destroy', content_sponsor, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'Back to Dashboard', dashboard_showdown_path
+|
+= link_to 'Add New Partner', new_content_sponsor_path

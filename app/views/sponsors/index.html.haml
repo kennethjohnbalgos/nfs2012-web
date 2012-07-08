@@ -2,12 +2,12 @@
 .content
   .right_space
     .announcement_title
-      = image_tag('menu_title_news_and_updates.jpg')
+      = image_tag('menu_title_sponsors.jpg')
     .announcement_list
       = render partial: 'menu'
   .left_space
     .title
-      = @content_announcement.title if @content_announcement.present?
+      = @content_archive.title if @content_archive.present?
     .context
-      =raw @content_announcement.content if @content_announcement.present?
+      =raw @content_archive.content if @content_archive.present?
 = render partial: 'shared/footer'

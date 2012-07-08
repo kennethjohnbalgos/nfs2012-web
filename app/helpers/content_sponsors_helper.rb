@@ -1,0 +1,2 @@
+module ContentSponsorsHelper
+end

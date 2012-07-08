@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  clickable: false
+  content: MyText
+  position: 1
+  title: MyString
+
+two:
+  clickable: false
+  content: MyText
+  position: 1
+  title: MyString

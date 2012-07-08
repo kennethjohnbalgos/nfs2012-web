@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Clickable:
+  = @content_sponsor.clickable
+%p
+  %b Content:
+  = @content_sponsor.content
+%p
+  %b Position:
+  = @content_sponsor.position
+%p
+  %b Title:
+  = @content_sponsor.title
+
+= link_to 'Edit', edit_content_sponsor_path(@content_sponsor)
+\|
+= link_to 'Back', content_sponsors_path

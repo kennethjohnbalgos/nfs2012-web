@@ -1,13 +1,9 @@
 Nfs2012Web::Application.routes.draw do
 
-
   mount Ckeditor::Engine => '/ckeditor'
   match "foodshowdown2012abscbn" => "dashboard#showdown"
 
-
   get "dashboard/showdown"
-
-
   get "shared/navigation"
 
 
@@ -16,6 +12,7 @@ Nfs2012Web::Application.routes.draw do
   resources :content_abouts
   resources :content_competitions
   resources :content_partners
+  resources :content_sponsors
   
   match "home" => "home#index"
   match "about(/:action/:id)" => "about#index"
@@ -24,6 +21,7 @@ Nfs2012Web::Application.routes.draw do
   match "archives(/:action/:id)" => "archives#index"
   match "contact_us(/:action/:id)" => "contact_us#index"
   match "partners(/:action/:id)" => "partners#index"
+  match "sponsors(/:action/:id)" => "sponsors#index"
   match "gallery(/:action)" => "gallery#index"
 
   # The priority is based upon order of creation:
