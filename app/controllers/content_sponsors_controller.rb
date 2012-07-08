@@ -2,7 +2,7 @@ class ContentSponsorsController < ApplicationController
   # GET /content_sponsors
   # GET /content_sponsors.json
   def index
-    @content_sponsors = ContentSponsor.all
+    @content_sponsors = ContentSponsor.order('title')
 
     respond_to do |format|
       format.html # index.html.erb

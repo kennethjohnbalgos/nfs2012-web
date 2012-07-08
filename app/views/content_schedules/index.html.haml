@@ -1,0 +1,22 @@
+%h1 Content Listing: Schedules
+
+%table.content
+  %tr
+    %th Title
+    %th Clickable
+    %th.controls
+
+  - @content_schedules.each do |content_schedule|
+    %tr
+      %td.left= content_schedule.title
+      %td.center= content_schedule.clickable
+      %td.controls
+        = link_to 'Show', content_schedule
+        = link_to 'Edit', edit_content_schedule_path(content_schedule)
+        = link_to 'Destroy', content_schedule, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'Back to Dashboard', dashboard_showdown_path
+|
+= link_to 'Add New Content', new_content_schedule_path

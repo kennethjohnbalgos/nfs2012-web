@@ -6,13 +6,13 @@ Nfs2012Web::Application.routes.draw do
   get "dashboard/showdown"
   get "shared/navigation"
 
-
   resources :content_archives
   resources :content_announcements
   resources :content_abouts
   resources :content_competitions
   resources :content_partners
   resources :content_sponsors
+  resources :content_schedules
   
   match "home" => "home#index"
   match "about(/:action/:id)" => "about#index"
@@ -22,6 +22,7 @@ Nfs2012Web::Application.routes.draw do
   match "contact_us(/:action/:id)" => "contact_us#index"
   match "partners(/:action/:id)" => "partners#index"
   match "sponsors(/:action/:id)" => "sponsors#index"
+  match "schedules(/:action/:id)" => "schedules#index"
   match "gallery(/:action)" => "gallery#index"
 
   # The priority is based upon order of creation:

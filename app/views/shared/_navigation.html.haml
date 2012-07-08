@@ -1,9 +1,37 @@
-= link_to "Home", {controller: 'home'}, class: "#{'active' if params[:controller] == 'home'}"
-= link_to "About", {controller: 'about'}, class: "#{'active' if params[:controller] == 'about'}"
-= link_to "News & Updates", {controller: 'announcements'}, class: "#{'active' if params[:controller] == 'announcements'}"
-= link_to "Competitions", {controller: 'competitions'}, class: "#{'active' if params[:controller] == 'competitions'}"
-= link_to "Gallery", {controller: 'gallery'}
-= link_to "Partners", {controller: 'partners'}, class: "#{'active' if params[:controller] == 'partners'}"
-= link_to "Sponsors", {controller: 'sponsors'}, class: "#{'active' if params[:controller] == 'sponsors'}"
-= link_to "Media", {controller: 'archives'}, class: "#{'active' if params[:controller] == 'archives'}"
+= link_to "Home", 
+  {controller: 'home'}, 
+  class: "#{'active' if params[:controller] == 'home'}"
+    
+= link_to "About", 
+  {controller: 'about'}, 
+  class: "#{'active' if params[:controller] == 'about'}"
+    
+= link_to "News & Updates", 
+  {controller: 'announcements'}, 
+  class: "#{'active' if params[:controller] == 'announcements'}"
+    
+= link_to "Competitions", 
+  {controller: 'competitions'}, 
+  class: "#{'active' if params[:controller] == 'competitions'}"
+    
+= link_to "Schedules", 
+  {controller: 'schedules'}, 
+  class: "#{'active' if params[:controller] == 'schedules'}"
+    
+= link_to "Gallery", 
+  {controller: 'gallery'}, 
+  class: "#{'active' if params[:controller] == 'gallery'}"
+  
+= link_to "Partners", 
+  {controller: 'partners'}, 
+  class: "#{'active' if params[:controller] == 'partners'}"
+    
+= link_to "Sponsors",
+  {controller: 'sponsors'},
+  class: "#{'active' if params[:controller] == 'sponsors'}"
+    
+= link_to "Media", 
+  {controller: 'archives'},
+  class: "#{'active' if params[:controller] == 'archives'}"
+    
 =# link_to "CONTACT US", "#footer", class: 'menu_contact_us'

@@ -1,9 +1,9 @@
-= form_for @content_sponsor do |f|
-  -if @content_sponsor.errors.any?
+= form_for @content_schedule do |f|
+  -if @content_schedule.errors.any?
     #error_explanation
-      %h2= "#{pluralize(@content_sponsor.errors.count, "error")} prohibited this content_sponsor from being saved:"
+      %h2= "#{pluralize(@content_schedule.errors.count, "error")} prohibited this content_schedule from being saved:"
       %ul
-        - @content_sponsor.errors.full_messages.each do |msg|
+        - @content_schedule.errors.full_messages.each do |msg|
           %li= msg
 
   .field

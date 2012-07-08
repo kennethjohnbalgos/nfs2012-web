@@ -2,7 +2,7 @@ class ContentCompetitionsController < ApplicationController
   # GET /content_competitions
   # GET /content_competitions.json
   def index
-    @content_competitions = ContentCompetition.all
+    @content_competitions = ContentCompetition.order('position')
 
     respond_to do |format|
       format.html # index.html.erb

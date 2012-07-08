@@ -1,0 +1,19 @@
+%p#notice= notice
+
+%p
+  %b Clickable:
+  = @content_schedule.clickable
+%p
+  %b Content:
+  %div.content
+    =raw @content_schedule.content
+%p
+  %b Position:
+  = @content_schedule.position
+%p
+  %b Title:
+  = @content_schedule.title
+
+= link_to 'Edit', edit_content_schedule_path(@content_schedule)
+\|
+= link_to 'Back', content_schedules_path

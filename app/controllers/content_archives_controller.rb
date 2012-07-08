@@ -2,7 +2,7 @@ class ContentArchivesController < ApplicationController
   # GET /content_archives
   # GET /content_archives.json
   def index
-    @content_archives = ContentArchive.all
+    @content_archives = ContentArchive.order('created_at')
 
     respond_to do |format|
       format.html # index.html.erb
