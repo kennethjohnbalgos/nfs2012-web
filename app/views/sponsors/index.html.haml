@@ -7,7 +7,7 @@
       = render partial: 'menu'
   .left_space
     .title
-      = @content_archive.title if @content_archive.present?
+      = @content_sponsor.title if @content_sponsor.present?
     .context
-      =raw @content_archive.content if @content_archive.present?
+      =raw @content_sponsor.content if @content_sponsor.present?
 = render partial: 'shared/footer'

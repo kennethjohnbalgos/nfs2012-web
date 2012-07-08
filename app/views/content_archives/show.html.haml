@@ -5,7 +5,8 @@
   = @content_archive.title
 %p
   %b Content:
-  = @content_archive.content
+  %div.content
+    =raw @content_archive.content
 %p
   %b Position:
   = @content_archive.position
