@@ -4,6 +4,7 @@ Nfs2012Web::Application.routes.draw do
   match "foodshowdown2012abscbn" => "dashboard#showdown"
 
   match "dashboard" => "dashboard#showdown"
+  match "dashboard/showdown" => "dashboard#showdown"
   get "shared/navigation"
 
   resources :content_archives
