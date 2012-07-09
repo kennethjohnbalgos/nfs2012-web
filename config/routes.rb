@@ -3,7 +3,7 @@ Nfs2012Web::Application.routes.draw do
   mount Ckeditor::Engine => '/ckeditor'
   match "foodshowdown2012abscbn" => "dashboard#showdown"
 
-  get "dashboard/showdown"
+  match "dashboard" => "dashboard#showdown"
   get "shared/navigation"
 
   resources :content_archives
