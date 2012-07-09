@@ -7,7 +7,7 @@
       = render partial: 'menu'
   .left_space
     .title
-      = @content_competition.title if @content_competition.present?
+      = @content_competition.title.gsub('_','').gsub('-','').strip if @content_competition.present?
     .context
       =raw @content_competition.content if @content_competition.present?
 = render partial: 'shared/footer'
